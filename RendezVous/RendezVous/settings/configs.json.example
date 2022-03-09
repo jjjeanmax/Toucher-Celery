@@ -1,0 +1,36 @@
+{
+    "PROTOCOL": "http",
+    "DOMAIN": "localhost",
+    "DEBUG": true,
+    "SECRET_KEY": "<set_secret_key_here>",
+    "DATABASE": {
+        "HOST": "",
+        "PORT": "",
+        "NAME": "",
+        "USER": "",
+        "PASSWORD": ""
+    },
+    "REDIS": {
+        "HOST": "localhost",
+        "PORT": "6379",
+        "CACHE_DB": "1"
+    },
+    "CLIENT": {
+        "HOST": "localhost",
+        "PORT": "6379",
+        "CACHE_DB": "2",
+        "TTL": 3600
+    },
+    "CELERY": {
+        "BROKER_URL": "redis://localhost:6379/0"
+    },
+     "EMAIL": {
+        "HOST": "",
+        "PORT": 0,
+        "HOST_USER": "",
+        "HOST_PASSWORD": "",
+        "USE_TLS": false,
+        "USE_SSL": true,
+        "TIMEOUT": 10.0
+  },
+}
