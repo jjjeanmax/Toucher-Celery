@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'client',
     'core',
     'api',
+    'Talon',
 ]
 
 MIDDLEWARE = [
