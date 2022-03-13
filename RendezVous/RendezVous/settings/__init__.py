@@ -7,4 +7,5 @@ include(
     'celery.py',
     'api_docs.py',
     'email.py',
+    'cors.py',
 )

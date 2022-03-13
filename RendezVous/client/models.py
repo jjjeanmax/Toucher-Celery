@@ -12,11 +12,10 @@ class ClientProfile(models.Model):
     first_name = models.CharField(verbose_name='имя', max_length=255, blank=True, null=True)
     created_at = models.DateTimeField(verbose_name='дата и время на Встречу')
 
-    unique_together = [['id', 'phone_number']]
-
-    def __str__(self):
-        return str(self.phone_number)
-
     class Meta:
         verbose_name = 'профиль клиента'
         verbose_name_plural = 'профили клиентов'
+        unique_together = ('email', 'phone_number',)
+
+    def __str__(self):
+        return str(self.phone_number)
